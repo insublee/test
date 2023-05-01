@@ -157,7 +157,7 @@ with torch.cuda.amp.autocast():
     trainer.train()
 
 # ## Share adapters on the 🤗 Hub
-model.push_to_hub(training_args.output_dir, use_auth_token=True)
+# model.push_to_hub(training_args.output_dir, use_auth_token=True)
 
 # Load adapters from the Hub and generate some output texts:
 
